@@ -2,13 +2,13 @@ import { Routes } from '@angular/router';
 
 import { LoginRoutes } from './login/login.routes';
 import { SignupRoutes } from './signup/signup.routes';
-import { DashboardRoutes } from './dashboard/dashboard.routes';
+import { CollectionRoutes } from './recipies/collection/collection.routes';
 
 import { LoginComponent } from './login/index';
 
 export const routes: Routes = [
   ...LoginRoutes,
   ...SignupRoutes,
-  ...DashboardRoutes,
+  ...CollectionRoutes,
   { path: '**', component: LoginComponent }
 ];

@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 import { LoginModule } from './login/login.module';
 import { SignupModule } from './signup/signup.module';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { CollectionModule } from './recipies/collection/collection.module';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     RouterModule.forRoot(routes),
     LoginModule,
     SignupModule,
-    DashboardModule
+    CollectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
